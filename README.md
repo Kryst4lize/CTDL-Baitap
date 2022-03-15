@@ -10,5 +10,6 @@ Bài tập cấu trúc dữ liệu , Deadline ngày 17/03/2022
   <li><strong>Testing.csv</strong>: Kết quả đo được từ dữ liệu (Chạy trên i3-8130u, IDE visual studio 2019 </li>
   <li><strong>21520063-report.pdf</strong>: Báo cáo kết quả </li>
 </ul>
+Có thể lấy Datainput.txt tại link này : https://drive.google.com/file/d/1jsv5BGEGoO8Xla2jkVhtDdrKUtclRCqe/view?usp=sharing
 <!-- heighlihg -->
 
