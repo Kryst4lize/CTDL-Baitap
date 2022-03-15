@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include<random>
 #include<vector>
 #include<fstream>
@@ -32,6 +33,7 @@ void quickSort(double arr[], int start, int end)
     }
 }
 //Merge sort implementation
+
 void mergeSort(double arr[], int l, int r)
 {
     if (l < r)
@@ -39,40 +41,37 @@ void mergeSort(double arr[], int l, int r)
         int m = l + (r - l) / 2;
         mergeSort(arr, l, m);
         mergeSort(arr, m + 1, r);
-        int i, j, k;
         int n1 = m - l + 1;
         int n2 = r - m;
-        vector<double> L(n1), R(n2);
-        for (i = 0; i < n1; i++)
-            L[i] = arr[l + i];
-        for (j = 0; j < n2; j++)
-            R[j] = arr[m + 1 + j];
-        i = 0;
-        j = 0;
-        k = l;
+        vector<double> left(n1), right(n2);
+        for (int i = 0; i < n1; i++)
+            left[i] = arr[l + i];
+        for (int j = 0; j < n2; j++)
+            right[j] = arr[m + 1 + j];
+        int i = 0, j = 0, k = l;
         while (i < n1 && j < n2)
         {
-            if (L[i] <= R[j])
+            if (left[i] <= right[j])
             {
-                arr[k] = L[i];
+                arr[k] = left[i];
                 i++;
             }
             else
             {
-                arr[k] = R[j];
+                arr[k] = right[j];
                 j++;
             }
             k++;
         }
         while (i < n1)
         {
-            arr[k] = L[i];
+            arr[k] = left[i];
             i++;
             k++;
         }
         while (j < n2)
         {
-            arr[k] = R[j];
+            arr[k] = right[j];
             j++;
             k++;
         }
@@ -100,6 +99,10 @@ void heapSort(double arr[], int n) {
         swap(arr[0], arr[i]);
         reorder(arr, i, 0);
     }
+}
+//
+void stdSort(double arr[]) {
+    sort(arr, arr + element);
 }
 //check whether arr is sort or not
 bool isSort(double arr[]) {
