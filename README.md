@@ -2,6 +2,7 @@
 Bài tập cấu trúc dữ liệu , Deadline ngày 17/03/2022
 <h1> Chú thích các file </h1>
 <ul>
+  <li><strong>main.cpp</strong>: File chạy bài tập </li>
   <li><strong>sort.h</strong>: Header chứa các function trong bài tập </li>
   <li><strong>SortingAlgorithm.cpp</strong>: Chứa các function về quicksort, heapsort và mergesort </li>
   <li><strong>random.cpp</strong>: Chứa các function để tạo bộ dữ liệu ngẫu nhiên (1 triệu phần tử/dòng và có 10 dòng) và có 2 dòng sắp xếp sẵn thứ tự tăng dần </li>
